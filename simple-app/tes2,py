@@ -1,0 +1,13 @@
+# def get_full_name(a:str, b:str):
+#     return a.upper() +" " + b.upper()
+
+# ans: str = get_full_name("Antho", 'clintan')
+# print(ans)
+
+from typing import Annotated
+
+
+def say_hello(name: Annotated[str, "this is just metadata"]) -> str:
+    return f"Hello {name}"
+
+print(say_hello("anto"))
